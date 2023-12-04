@@ -15,7 +15,7 @@ function main() {
 // if (c==5||score==5){
 //     location.replace("./gameover.html")
 // }
-let sec=20
+let sec=21
 let counter=()=>{
     sec--
     document.getElementById("timer").innerHTML=sec
