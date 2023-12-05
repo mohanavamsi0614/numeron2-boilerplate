@@ -1,28 +1,19 @@
 // Iteration 2: Generating two random numbers (0 to 100) and displaying the same in the game.html
-
 // Iteration 3: Creating variables required to make the game functional
-
 // Iteration 4: Creating a variable for number 3 and a variable for storing the html element with the Id "number3"
-
 // Iteration 5: Creating a randomise function to make the game functional
-
 // Iteration 6: Making the Operators (button) functional
-
 // Iteration 7: Making Timer functional
 let score=0
 let c=0
 function main() {
-// if (c==5||score==5){
-//     location.replace("./gameover.html")
-// }
 let sec=21
 let counter=()=>{
     sec--
     document.getElementById("timer").innerHTML=sec
     if (sec<=0){
         location.replace("./gameover.html")
-    }
-}
+    }}
 d=setInterval(counter,1000);
 let num1=Math.ceil(Math.random()*100)+1
 let num2=Math.ceil(Math.random()*100)+1
@@ -49,16 +40,12 @@ function game(i){
     if (eval(num1+i+num2)==ans){
         score++
         clearInterval(d)
-
-        main()
-        
+        main()  
     }
     else{
         location.replace("./gameover.html")
     }
     c++
     localStorage.setItem("scores",score)
-}
-    
-}
+}}
 main()
