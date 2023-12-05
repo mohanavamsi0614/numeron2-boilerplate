@@ -17,12 +17,12 @@ function main() {
 // }
 let sec=20
 let counter=()=>{
+    
+    document.getElementById("timer").innerHTML=sec
     if (sec<=0){
         location.replace("./gameover.html")
     }
-    document.getElementById("timer").innerHTML=sec
     sec--
-   
 }
 d=setInterval(counter,1000);
 let num1=Math.ceil(Math.random()*100)+1
